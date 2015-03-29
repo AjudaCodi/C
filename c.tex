@@ -1,0 +1,101 @@
+\documentclass[a4paper,10pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[catalan]{babel}
+
+% links de la web
+\usepackage{hyperref}
+
+\begin{document}
+-- voldria testejar guide o manual than c\\
+\part{google}
+\section{documentation c}
+\begin{itemize}
+\item \href{http://www.acm.uiuc.edu/webmonkeys/book/c_guide/}{El meu preferit, des del 1997}
+\item \href{http://www.gnu.org/software/gnu-c-manual/gnu-c-manual.html}{Manual GNU}
+\item \href{http://www.cs.cf.ac.uk/Dave/C_index.html}{aparenta força cutre ...}
+\end{itemize}
+
+\section{learn c}
+\begin{itemize}
+\item \href{http://www.cprogramming.com/}{Massa general pel meu gust}
+\item \href{http://c.learncodethehardway.org/}{Python, ruby, C, Regex, SQL...}
+\item \href{http://www.cprogramming.com/tutorial/c-tutorial.html}{Tutorial de c, aparentment decent}
+\item \href{http://c.learncodethehardway.org/book/}{Nomes semblen problemes}
+\item \href{http://www.learn-c.org/}{Pointer Arithmetics, Function Pointers, Ni idea, sembla xulisim}
+\item \href{http://www.c4learn.com/c-programming/c-ansi/}{No me le estudiat}
+\end{itemize}
+
+\section{how to yield generator in c}
+\begin{itemize}
+\item \href{http://eli.thegreenplace.net/2012/04/05/implementing-a-generatoryield-in-a-python-c-extension}{simular un yield en c}
+\end{itemize}
+
+\section{source code c}
+\begin{itemize}
+\item \href{http://www.programmingsimplified.com/c-games-and-projects}{Molt de codi per a veure}
+\item \href{http://www.programmingsimplified.com/c-program-examples}{Mes codi per a veure}
+\item \href{http://www.programiz.com/c-programming/examples/source-code-output}{Cosa basica per a c}
+\end{itemize}
+
+\section{Random c}
+\begin{itemize}
+\item \href{http://www.programmingsimplified.com/c-program-generate-random-numbers}{Molts d'exemples, esta realment interesant}
+\end{itemize}
+
+\section{Debugger}
+google: como debugar c con gdb\\
+gdb terminal color
+\begin{itemize}
+\item Compile: --debug
+\item run: executa el programa
+\item start: para al arribar al main
+\item b \{num, method\}: break
+	\begin{itemize}
+	\item watch exp: Quan canvia de valor exp, llavors es para
+	\item info {break, watch}: observar tots els breaks que tens
+	\item clear breakpint: elimina un break
+	\item delei 13: elimina el break del numero que se veu en info
+	\end{itemize}
+\item tb \{num, method\}: break only one time
+\item n: next line
+\item s: next line, if is a method, in this
+\item p var: show a var
+\item q: exit
+\item fr: on estasj
+\item bt: mostra el cami a fer per arribar on estas (amb les reucrions es perillos)
+\item h: help
+\item ENTER: like . in vim
+\end{itemize}
+\subsection{Debug post-mortem}
+Analitzar si algun cop ho necessito\\
+\$ gdb programa core\\
+Sembla ser que el core es força important\\
+\$ gdb programa pid\\
+Aparentment, util per debugegar quan hi ha interficie gràfica.
+\subsection{Valgrind}
+Diuen que es un emulador d'execusions. Aixi que se sap que pasa :)
+\subsection{links}
+\begin{itemize}
+\item http://lihuen.linti.unlp.edu.ar/index.php?title=C\%C3\%B3mo\_usar\_GDB
+\item http://www.reloco.com.ar/linux/prog/debug.html
+\item[util] http://www.eis.uva.es/~fergay/III/enlaces/gdb.html
+\item[info vestia] http://ldc.usb.ve/~figueira/cursos/ci3825/taller/material/gdb.html
+\item[core info] http://crysol.github.io/recipe/2006-03-25/depurar-un-programa-c-c/\#.VDpgdnVie00
+\item[color] http://stackoverflow.com/questions/209534/prettify-my-gdb
+\end{itemize}
+\end{document}
+
+if(one)
+	if(two)
+		foo();
+	else
+		bar();
+
+From this:
+
+if(one)
+	if(two)
+		foo();
+else
+	bar();
+
